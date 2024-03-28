@@ -4,35 +4,30 @@
     <meta charset="UTF-8">
     <title>Yoga</title>
 
-    <style>
-        .logo-header {
-            width:300px;
-            height:300px;
-        }
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Parisienne&display=swap" rel="stylesheet">
 
-        .logo-footer {
-            width:200px;
-            height:200px;
-        }
-    </style>
+    <link rel="stylesheet" href="css/yoga.css">
 </head>
 <body>
     <header>
-        <div>
-            <img class="logo-header" src="img/vecteezy_yoga-logo-design-vector-template_8912556.jpg" alt="logo">
+        <div class="header-logo">
+            <img class="logo-header" src="img/logo.png" alt="logo">
         </div>
-        <div>
+        <div class="header-titulo">
             <h1>Yoga</h1>
             <h3>subtitulo</h3>
         </div>
-        
     </header>
-    <nav>
+
+    <nav class="menu">
         <ul>
             <li><a href="#sobreMi">Sobre mi</a></li>
             <li><a href="#practica">Práctica</a></li>
             <li><a href="#contacto">Contacto</a></li>
-            <li><a href="#productos">Productos</a></li>
+            <li><a href="#cursos">Cursos</a></li>
         </ul>
     </nav>
     <section id="sobreMi">
@@ -44,11 +39,13 @@
     <section id="practica">
         <h2>Practica</h2>
 
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/jMOZz7GHaog?si=aVcffAU_XAnmTCHI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <div class="videos">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/jMOZz7GHaog?si=aVcffAU_XAnmTCHI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/1J8CRcoFekE?si=T1y2Rn0gipzf7NWv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/1J8CRcoFekE?si=T1y2Rn0gipzf7NWv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/Svyx2meUTeY?si=r4SKoktLXgHlvDqh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/Svyx2meUTeY?si=r4SKoktLXgHlvDqh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
     </section>
 
     <section id="contacto">
@@ -71,21 +68,26 @@
         </form>
     </section>
 
-    <section id="productos">
-        <h2>Productos</h2>
+    <section id="cursos">
+        <h2>Cursos</h2>
     </section>
     <footer>
         <div>
-            <img class="logo-footer" src="img/vecteezy_yoga-logo-design-vector-template_8912556.jpg" alt="logo">
+            <div class="footer-logo">
+                <img class="logo-footer" src="img/logo.png" alt="logo">
+            </div>
+            <nav class="footer-nav">
+                <ul>
+                    <li><a href="#sobreMi">Sobre mi</a></li>
+                    <li><a href="#practica">Práctica</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                    <li><a href="#cursos">Cursos</a></li>
+                </ul>
+            </nav>
         </div>
-        <nav>
-            <ul>
-                <li><a href="#sobreMi">Sobre mi</a></li>
-                <li><a href="#practica">Práctica</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-                <li><a href="#productos">Productos</a></li>
-            </ul>
-        </nav>
+        <div class="powered-by">
+            Powered by Rodrigo
+        </div>
     </footer>
 </body>
 </html>
