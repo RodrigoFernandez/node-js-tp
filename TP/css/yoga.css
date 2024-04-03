@@ -50,6 +50,22 @@ nav.menu ul > li a:hover {
   background-color: rgb(195,107,93); /* dark coral */
 }
 
+.contenido {
+    display: none;
+}
+
+.default {
+    display:block;
+}
+  
+:target {
+    display:block;
+}
+  
+:target ~ .default {
+    display:none;
+}
+
 nav.footer-nav {
     float: left;
     padding: 0.2rem;
@@ -94,6 +110,26 @@ h2 {
     margin-bottom: 0.5rem;
 }
 
+.header-titulo > h1 {
+    margin-bottom: 0rem;
+}
+
+.header-titulo > h3 {
+    margin-top: 0rem;
+}
+
+main {
+    padding-bottom: 1rem;
+}
+
+section > h2 {
+    padding-left: 1rem;
+}
+
+#practicaContenido > h2 {
+    padding-left: 1rem;
+}
+
 footer {
     display: grid;
     background-color: rgb(176,193,187); /* sea breeze */
@@ -129,14 +165,57 @@ footer {
     padding-bottom: 0.5rem;
 }
 
-#practica {
+#practicaContenido {
     display: grid;
 }
 
-#practica > div.videos {
+#practicaContenido > div.videos {
     justify-content: center;
 }
-#practica > div.videos > iframe {
+#practicaContenido > div.videos > iframe {
     margin-top: 0.5rem;
     margin-bottom: 0.5rem;
+}
+
+#sobreMi > p {
+    margin-left: 3rem;
+    margin-right: 1.5rem;
+}
+
+#cursosContenido > div {
+    display: flex;
+    gap: 1.5rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+
+}
+
+#cursosContenido > div > article {
+    background-color: rgb(209,157,112);
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+}
+
+#cursosContenido > div > article > h3 {
+    margin-left: 1rem;
+    color: rgb(73,93,97);
+}
+
+#cursosContenido > div > article > p {
+    margin-left: 3rem;
+    margin-right: 1.5rem;
+    flex-grow: 1;
+}
+
+.consultaCursoBtn {
+    text-decoration: none;
+    color: rgb(73,93,97); /* ocean */
+    background-color: rgb(230,209,207); /* powder pink */
+    border-radius: 25px;
+    padding: 10px ;
+    display: flex;
+    justify-content: flex-end;
+    margin: auto;
+    margin-bottom: 5px;
 }

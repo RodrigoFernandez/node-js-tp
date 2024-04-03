@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <title>Yoga</title>
+    
+    <link rel="icon" type="image/x-icon" href="img/logo.ico">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,67 +16,97 @@
 <body>
     <header>
         <div class="header-logo">
-            <img class="logo-header" src="img/logo.png" alt="logo">
+            <a href="#">
+                <img class="logo-header" src="img/logo.png" alt="logo">
+            </a>
         </div>
         <div class="header-titulo">
             <h1>Yoga</h1>
-            <h3>subtitulo</h3>
+            <h3>Cultiva buenos hábitos</h3>
         </div>
     </header>
+    <main>
+        <nav class="menu">
+            <ul>
+                <li><a href="#sobreMi">Sobre mi</a></li>
+                <li><a href="#practica">Práctica</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+                <li><a href="#cursos">Cursos</a></li>
+            </ul>
+        </nav>
+        
+        <section id="practica" class="contenido">
+            <div id="practicaContenido" >
+                <h2>Practica</h2>
 
-    <nav class="menu">
-        <ul>
-            <li><a href="#sobreMi">Sobre mi</a></li>
-            <li><a href="#practica">Práctica</a></li>
-            <li><a href="#contacto">Contacto</a></li>
-            <li><a href="#cursos">Cursos</a></li>
-        </ul>
-    </nav>
-    <section id="sobreMi">
-        <h2>Sobre mi</h2>
+                <div class="videos">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/jMOZz7GHaog?si=aVcffAU_XAnmTCHI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod incidunt non laboriosam aut a, autem earum, iure alias dolorem ea eum consequatur, saepe doloribus excepturi eius perferendis. Ipsa, delectus fuga.</p>
-    </section>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/1J8CRcoFekE?si=T1y2Rn0gipzf7NWv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-    <section id="practica">
-        <h2>Practica</h2>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/Svyx2meUTeY?si=r4SKoktLXgHlvDqh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+        </section>
 
-        <div class="videos">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/jMOZz7GHaog?si=aVcffAU_XAnmTCHI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <section id="contacto" class="contenido">
+            <h2>Contacto</h2>
 
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/1J8CRcoFekE?si=T1y2Rn0gipzf7NWv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <p>Dejá un mensaje y te contacto a la brevedad.</p>
 
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/Svyx2meUTeY?si=r4SKoktLXgHlvDqh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        </div>
-    </section>
+            <form action="">
+                <label for="nombre">Nombre:</label><br>
+                <input type="text" id="nombre" name="nombre"><br><br>
+                <label for="apellido">Apellido:</label><br>
+                <input type="text" id="apellido" name="apellido"><br><br>
+                <label for="email">E-Mail:</label><br>
+                <input type="text" id="email" name="email"><br><br>
+                <label for="telefono">Telefono:</label><br>
+                <input type="text" id="telefono" name="telefono" placeholder=""><br><br>
+                <label for="mensaje">Mensaje:</label><br>
+                <textarea id="mensaje" name="mensaje"></textarea><br><br>
+                <input type="submit" value="Enviar">
+            </form>
+        </section>
 
-    <section id="contacto">
-        <h2>Contacto</h2>
+        <section id="cursos" class="contenido">
+            <div id="cursosContenido" >
+                <h2>Cursos</h2>
+                <div>
+                    <article>
+                        <h3>Yoga para niños</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis unde rerum hic enim accusamus mollitia commodi delectus voluptas fugiat quam, suscipit repellendus incidunt possimus repellat pariatur dolorem omnis, veniam veritatis.</p>
+                        <a href="#contacto" class="consultaCursoBtn">Consultar</a>
+                    </article>
+                    <article>
+                        <h3>Yoga para adultos</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis unde rerum hic enim accusamus mollitia commodi delectus voluptas fugiat quam, suscipit repellendus incidunt possimus repellat pariatur dolorem omnis, veniam veritatis.</p>
+                        <a href="#contacto" class="consultaCursoBtn">Consultar</a>
+                    </article>
+                    <article>
+                        <h3>Yoga</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis unde rerum hic enim accusamus mollitia commodi delectus voluptas fugiat quam, suscipit repellendus incidunt possimus repellat pariatur dolorem omnis, veniam veritatis.</p>
+                        <a href="#contacto" class="consultaCursoBtn">Consultar</a>
+                    </article>
+                </div>
+            </div>
+            
+        </section>
 
-        <p>Dejá un mensaje y te contacto a la brevedad.</p>
+        <section id="sobreMi" class="contenido default">
+            <h2>Sobre mi</h2>
 
-        <form action="">
-            <label for="nombre">Nombre:</label><br>
-            <input type="text" id="nombre" name="nombre"><br><br>
-            <label for="apellido">Apellido:</label><br>
-            <input type="text" id="apellido" name="apellido"><br><br>
-            <label for="email">E-Mail:</label><br>
-            <input type="text" id="email" name="email"><br><br>
-            <label for="telefono">Telefono:</label><br>
-            <input type="text" id="telefono" name="telefono" placeholder=""><br><br>
-            <label for="mensaje">Mensaje:</label><br>
-            <textarea id="mensaje" name="mensaje"></textarea><br><br>
-            <input type="submit" value="Enviar">
-        </form>
-    </section>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod incidunt non laboriosam aut a, autem earum, iure alias dolorem ea eum consequatur, saepe doloribus excepturi eius perferendis. Ipsa, delectus fuga.</p>
+            <p>Orem, ipsum dolor sit amet consectetur adipisicing elit. Quod incidunt non laboriosam aut a, autem earum, iure alias dolorem ea eum consequatur, saepe doloribus excepturi eius perferendis. Ipsa, delectus fuga.</p>
+        </section>
+    </main>
 
-    <section id="cursos">
-        <h2>Cursos</h2>
-    </section>
     <footer>
         <div>
             <div class="footer-logo">
-                <img class="logo-footer" src="img/logo.png" alt="logo">
+                <a href="#">
+                    <img class="logo-footer" src="img/logo.png" alt="logo">
+                </a>
             </div>
             <nav class="footer-nav">
                 <ul>
