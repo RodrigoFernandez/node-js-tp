@@ -67,7 +67,7 @@ nav.menu ul > li a:hover {
 }
 
 nav.footer-nav {
-    float: left;
+    /*float: left;*/
     padding: 0.2rem;
     padding-top: 3rem;
     margin-left: 2.5rem;
@@ -136,6 +136,7 @@ footer {
     padding-top: 1rem;
 }
 
+
 .logo-header {
     width:300px;
     height:300px;
@@ -149,10 +150,30 @@ footer {
 .footer-logo {
     border-right: 2px solid;
     border-color: rgb(195,107,93); /* dark coral */
-    /*width: 30%;*/
-    float: left;
-    padding: 0.2rem;
-    margin-right: 0.3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-redes {
+    display: flex;
+    flex-direction: column;
+    border-left: 2px solid;
+    border-color: rgb(195,107,93); /* dark coral */
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-redes > a > img {
+    width: 50%;
+    height: auto;
+    /* rgb(73,93,97); ocean */
+    filter: brightness(0) saturate(100%) invert(36%) sepia(10%) saturate(706%) hue-rotate(142deg) brightness(93%) contrast(93%);
+}
+
+.footer-header {
+    display: grid;
+    grid-template-columns: 20% 1fr 10%;
 }
 
 .powered-by {
@@ -170,16 +191,18 @@ footer {
 }
 
 #practicaContenido > div.videos {
-    justify-content: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
 }
 #practicaContenido > div.videos > iframe {
     margin-top: 0.5rem;
     margin-bottom: 0.5rem;
 }
 
-#sobreMi > p {
-    margin-left: 3rem;
-    margin-right: 1.5rem;
+#sobreMi > div > p, #sobreMi > div > img {
+    margin-left: 2rem;
+    margin-right: 2rem;
 }
 
 #cursosContenido > div {
@@ -187,7 +210,6 @@ footer {
     gap: 1.5rem;
     margin-left: 2rem;
     margin-right: 2rem;
-
 }
 
 #cursosContenido > div > article {
@@ -218,4 +240,13 @@ footer {
     justify-content: flex-end;
     margin: auto;
     margin-bottom: 5px;
+}
+
+.imagen-sobreMi {
+    width:248px;
+    height:178px;
+}
+
+#sobreMi > div {
+    display: flex;
 }
