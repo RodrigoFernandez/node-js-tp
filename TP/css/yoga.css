@@ -46,12 +46,17 @@ nav.menu ul > li a {
   text-decoration: none;
 }
 
-nav.menu ul > li a:hover {
-  background-color: rgb(195,107,93); /* dark coral */
+/*nav.menu ul > li a:hover {
+  background-color: rgb(195,107,93); * dark coral *
+}*/
+
+nav.menu ul.opcionesMenu li a:hover {
+    background-color: rgb(195,107,93); /* dark coral */
 }
 
 .hamburguesa {
     display: none;
+    cursor: pointer;
 }
 
 .hamburgesa_icon {
@@ -213,6 +218,8 @@ footer {
 #practicaContenido > div.videos > iframe {
     margin-top: 0.5rem;
     margin-bottom: 0.5rem;
+    max-width: 100%;
+    max-height: auto;
 }
 
 #sobreMi > div > p, #sobreMi > div > img {
@@ -324,17 +331,40 @@ footer {
 
     .hamburguesa {
         display: block;
+        float: right;
     }
-
-    .hamburguesa:checked ~ .opcionesMenu{
-        max-height: 240px;
-    }
-
+    
     .opcionesMenu {
         display: none;
     }
 
+    #check_hamburguesa:checked + .opcionesMenu {
+        display: block;
+    }
+
     .imagen-sobreMi {
         display: none;
+    }
+
+    .logo-header {
+        width:200px;
+        height:200px;
+    }
+    
+    .logo-footer {
+        width:100px;
+        height:100px;
+    }
+
+    #contactoContenido > div {
+        grid-template-columns: none;
+    }
+
+    #formularioContacto {
+        margin-right: unset;
+    }
+
+    #formularioContacto > input, #formularioContacto > textarea {
+        width: 10rem;
     }
 }
