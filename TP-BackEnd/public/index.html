@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Yoga</title>
+
+    <link rel="icon" type="image/x-icon" href="img/logo.ico">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Parisienne&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/yoga.css">
+</head>
+<body>
+    <header>
+        <div class="header-logo">
+            <a href="#">
+                <img class="logo-header" src="img/logo.png" alt="logo">
+            </a>
+        </div>
+        <div class="header-titulo">
+            <h1 id="titulo">Yoga</h1>
+            <h3>Cultiva buenos hábitos</h3>
+        </div>
+    </header>
+    <main>
+        <nav class="menu">
+            <label class="hamburguesa" for="check_hamburguesa">
+                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" id="hamburgesa_lineas" class="hamburgesa_icon" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+                </svg>
+            </label>
+
+            <input type="checkbox" id="check_hamburguesa">
+
+            <ul class="opcionesMenu">
+                <li><a href="#sobreMi">Sobre mi</a></li>
+                <li><a href="#practica">Práctica</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+                <li><a href="#cursos">Cursos</a></li>
+            </ul>
+        </nav>
+
+        <section id="practica" class="contenido">
+            <div id="practicaContenido" >
+                <h2>Practica</h2>
+
+                <div class="videos">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/jMOZz7GHaog?si=aVcffAU_XAnmTCHI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/1J8CRcoFekE?si=T1y2Rn0gipzf7NWv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/Svyx2meUTeY?si=r4SKoktLXgHlvDqh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+        </section>
+
+        <section id="contacto" class="contenido">
+            <div id="contactoContenido">
+                <h2>Contacto</h2>
+
+                <div>
+                    <p>Dejá un mensaje y te contacto a la brevedad.</p>
+
+                    <form id="formularioContacto" action="">
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" name="nombre">
+
+                        <label for="apellido">Apellido:</label>
+                        <input type="text" id="apellido" name="apellido">
+
+                        <label>Edad:</label>
+                        <div id="rangoEdad">
+                            <input type="radio" name="edad" id="rango15a34"> <span class="radioLabel">15 a 34 años</span>
+                            <br>
+                            <input type="radio" name="edad" id="rango35a45">  <span class="radioLabel">35 a 45 años</span>
+                            <br>
+                            <input type="radio" name="edad" id="rangoMayor45">  <span class="radioLabel">mayor a 45 años</span>
+                        </div>
+                        
+                        <label for="genero">Genero:</label>
+                        <select  name="genero" id="genero" required>
+                            <option value="genero">&nbsp;</option>
+                            <option value="hombre">Hombre</option>
+                            <option value="mujer">Mujer</option>
+                            <option value="nodeclara">otro</option>
+                        </select>
+
+                        <label for="mail">E-Mail:</label>
+                        <input type="email" id="mail" name="mail">
+
+                        <label for="telefono">Telefono:</label>
+                        <input type="tel" id="telefono" name="telefono">
+
+                        <label for="mensaje">Mensaje:</label>
+                        <textarea id="mensaje" name="mensaje"></textarea>
+                        <span></span>
+                        <div id="botonera">
+                            <input type="submit" value="Enviar">
+                            <input type="reset" value="Borrar">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section id="cursos" class="contenido">
+            <div id="cursosContenido" >
+                <h2>Cursos</h2>
+                <div>
+                    <article>
+                        <h3>Yoga para niños</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis unde rerum hic enim accusamus mollitia commodi delectus voluptas fugiat quam, suscipit repellendus incidunt possimus repellat pariatur dolorem omnis, veniam veritatis. Quis unde rerum hic enim accusamus mollitia commodi delectus voluptas fugiat quam, suscipit repellendus incidunt possimus repellat pariatur dolorem omnis, veniam veritatis.</p>
+                        <a href="#contacto" class="consultaCursoBtn">Consultar</a>
+                    </article>
+                    <article>
+                        <h3>Yoga para adultos</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis unde rerum hic enim accusamus mollitia commodi delectus voluptas fugiat quam, suscipit repellendus incidunt possimus repellat pariatur dolorem omnis, veniam veritatis.</p>
+                        <a href="#contacto" class="consultaCursoBtn">Consultar</a>
+                    </article>
+                    <article>
+                        <h3>Yoga</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis unde rerum hic enim accusamus mollitia commodi delectus voluptas fugiat quam, suscipit repellendus incidunt possimus</p>
+                        <a href="#contacto" class="consultaCursoBtn">Consultar</a>
+                    </article>
+                </div>
+            </div>
+
+        </section>
+
+        <section id="sobreMi" class="contenido default">
+            <h2>Sobre mi</h2>
+
+            <div>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod incidunt non laboriosam aut a, autem earum, iure alias dolorem ea eum consequatur, saepe doloribus excepturi eius perferendis. Ipsa, delectus fuga.</p>
+                <img class="imagen-sobreMi" src="img/loto.jpg" alt="loto">
+            </div>
+            <div>
+                <img class="imagen-sobreMi" src="img/arbol.jpeg" alt="arbol">
+                <p>Orem, ipsum dolor sit amet consectetur adipisicing elit. Quod incidunt non laboriosam aut a, autem earum, iure alias dolorem ea eum consequatur, saepe doloribus excepturi eius perferendis. Ipsa, delectus fuga.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-header">
+            <div class="footer-logo">
+                <a href="#">
+                    <img class="logo-footer" src="img/logo.png" alt="logo">
+                </a>
+            </div>
+            <nav class="footer-nav">
+                <ul>
+                    <li><a href="#sobreMi">Sobre mi</a></li>
+                    <li><a href="#practica">Práctica</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                    <li><a href="#cursos">Cursos</a></li>
+                </ul>
+            </nav>
+            <div class="footer-redes">
+                <a href="https://www.facebook.com">
+                    <img src="img/iconos/icons8-facebook-nuevo.svg" alt="facebook">
+                </a>
+                <a href="https://www.instagram.com">
+                    <img src="img/iconos/icons8-instagram.svg" alt="instagram">
+                </a>
+                <a href="https://ar.pinterest.com">
+                    <img src="img/iconos/icons8-pinterest.svg" alt="pinterest">
+                </a>
+                <a href="https://www.reddit.com">
+                    <img src="img/iconos/icons8-reddit.svg" alt="reddit">
+                </a>
+                <a href="https://www.tiktok.com/es">
+                    <img src="img/iconos/icons8-tik-tok.svg" alt="tik-tok">
+                </a>
+                <a href="https://twitter.com">
+                    <img src="img/iconos/icons8-twitter.svg" alt="twitter">
+                </a>
+            </div>
+        </div>
+        <div class="powered-by">
+            Powered by Rodrigo
+        </div>
+    </footer>
+    <script src="js/yoga.js"></script>
+    <script src="js/validaciones.js"></script>
+</body>
+</html>

@@ -1,0 +1,379 @@
+
+body {
+    font-family: "Libre Baskerville", serif;
+    font-weight: 400;
+    font-style: normal;
+
+    background-color: rgb(224,222,223); /* linen */
+    display: grid;
+}
+
+header {
+    background-color: rgb(176,193,187); /* sea breeze */
+    border-bottom: 5px solid;
+    border-color: rgb(195,107,93); /* dark coral */
+    width: 100%;
+}
+
+.header-logo {
+    float: left;
+}
+
+.header-titulo {
+    float: left;
+}
+
+nav.menu {
+    background-color: rgb(230,209,207); /* powder pink */
+}
+
+nav.menu > ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+nav.menu ul > li {
+    float: left;
+}
+
+nav.menu ul > li a {
+  display: block;
+  color: rgb(73,93,97); /* ocean */
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/*nav.menu ul > li a:hover {
+  background-color: rgb(195,107,93); * dark coral *
+}*/
+
+nav.menu ul.opcionesMenu li a:hover {
+    background-color: rgb(195,107,93); /* dark coral */
+}
+
+.hamburguesa {
+    display: none;
+    cursor: pointer;
+}
+
+.hamburgesa_icon {
+    filter: brightness(0) saturate(100%) invert(35%) sepia(11%) saturate(738%) hue-rotate(142deg) brightness(92%) contrast(89%);
+}
+
+#check_hamburguesa {
+    display: none;
+}
+
+.opcionesMenu {
+    overflow: hidden;
+}
+.contenido {
+    display: none;
+}
+
+.default {
+    display:block;
+}
+
+:target {
+    display:block;
+}
+
+:target ~ .default {
+    display:none;
+}
+
+nav.footer-nav {
+    /*float: left;*/
+    padding: 0.2rem;
+    padding-top: 3rem;
+    margin-left: 2.5rem;
+}
+
+nav.footer-nav > ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+nav.footer-nav ul > li a {
+  display: block;
+  color: rgb(73,93,97); /* ocean */
+  text-decoration: none;
+  margin: 0;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+h1, h2 {
+    font-family: "Parisienne", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 7rem;
+}
+
+h1 {
+    /*color: rgb(230,209,207);  powder pink */
+    color: rgb(73,93,97); /* ocean */
+    margin-bottom: 1rem;
+}
+
+h2 {
+    font-size: 5rem;
+    /*color: rgb(144,152,145);  sage */
+    color: rgb(58,68,68); /* dark ocean */
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.header-titulo > h1 {
+    margin-bottom: 0rem;
+}
+
+.header-titulo > h3 {
+    margin-top: 0rem;
+    font-weight: 100;
+}
+
+main {
+    padding-bottom: 1rem;
+}
+
+section > h2 {
+    padding-left: 1rem;
+}
+
+.contenido > div > h2 {
+    padding-left: 1rem;
+}
+
+footer {
+    display: grid;
+    background-color: rgb(176,193,187); /* sea breeze */
+    padding-top: 1rem;
+}
+
+.logo-header {
+    width:300px;
+    height:300px;
+}
+
+.logo-footer {
+    width:200px;
+    height:200px;
+}
+
+.footer-logo {
+    border-right: 2px solid;
+    border-color: rgb(195,107,93); /* dark coral */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-redes {
+    display: flex;
+    flex-direction: column;
+    border-left: 2px solid;
+    border-color: rgb(195,107,93); /* dark coral */
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-redes > a > img {
+    width: 50%;
+    height: auto;
+    /* rgb(73,93,97); ocean */
+    filter: brightness(0) saturate(100%) invert(36%) sepia(10%) saturate(706%) hue-rotate(142deg) brightness(93%) contrast(93%);
+}
+
+.footer-header {
+    display: grid;
+    grid-template-columns: 20% 1fr 10%;
+}
+
+.powered-by {
+    text-align: center;
+    color: rgb(209,157,112); /* wheat */
+    background-color: rgb(176,193,187); /* sea breeze */
+
+    margin-top: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+#practicaContenido {
+    display: grid;
+}
+
+#practicaContenido > div.videos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+}
+#practicaContenido > div.videos > iframe {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    max-width: 100%;
+    /*max-height: auto;*/
+}
+
+#sobreMi > div > p, #sobreMi > div > img {
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+#cursosContenido > div {
+    display: flex;
+    gap: 1.5rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+#cursosContenido > div > article {
+    background-color: rgb(209,157,112); /* wheat */
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 25rem;
+}
+
+#cursosContenido > div > article > h3 {
+    margin-left: 1rem;
+    color: rgb(73,93,97);
+}
+
+#cursosContenido > div > article > p {
+    margin-left: 3rem;
+    margin-right: 1.5rem;
+    flex-grow: 1;
+}
+
+.consultaCursoBtn {
+    text-decoration: none;
+    color: rgb(73,93,97); /* ocean */
+    background-color: rgb(230,209,207); /* powder pink */
+    border-radius: 25px;
+    padding: 10px ;
+    display: flex;
+    justify-content: flex-end;
+    margin: auto;
+    margin-bottom: 5px;
+}
+
+.imagen-sobreMi {
+    width:248px;
+    height:178px;
+}
+
+#sobreMi > div {
+    display: flex;
+}
+
+#contactoContenido {
+    display: grid;
+}
+
+#contactoContenido > div {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    column-gap: 2rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+#formularioContacto {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    margin-right: 4rem;
+}
+
+#formularioContacto > label {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}
+
+#formularioContacto > input, #formularioContacto > textarea, #formularioContacto > select {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    margin-left: 0.5rem;
+    margin-right: 2rem;
+    width: 25rem;
+}
+
+#formularioContacto > textarea {
+    height: 5rem;
+}
+
+.radioLabel {
+    font-size: 0.85rem;
+}
+
+#botonera {
+    margin-left: 0.5rem;
+}
+
+#formularioContacto > div > input[type=submit],
+#formularioContacto > div > input[type=reset] {
+    width: 100px;
+    color: rgb(73,93,97); /* ocean */
+    background-color: rgb(209,157,112); /* wheat */
+    border: 0px;
+}
+
+@media screen and (max-width: 768px) {
+    nav.menu ul > li {
+        float: none;
+    }
+
+    .header-titulo {
+        display: none;
+    }
+
+    .hamburguesa {
+        display: block;
+        float: right;
+    }
+    
+    .opcionesMenu {
+        display: none;
+    }
+
+    #check_hamburguesa:checked + .opcionesMenu {
+        display: block;
+    }
+
+    .imagen-sobreMi {
+        display: none;
+    }
+
+    .logo-header {
+        width:200px;
+        height:200px;
+    }
+    
+    .logo-footer {
+        width:100px;
+        height:100px;
+    }
+
+    #contactoContenido > div {
+        grid-template-columns: none;
+    }
+
+    #formularioContacto {
+        margin-right: unset;
+    }
+
+    #formularioContacto > input, #formularioContacto > textarea {
+        width: 10rem;
+    }
+}
