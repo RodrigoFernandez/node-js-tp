@@ -41,6 +41,7 @@
                 <li><a href="#practica">Práctica</a></li>
                 <li><a href="#contacto">Contacto</a></li>
                 <li><a href="#cursos">Cursos</a></li>
+                <li><a href="#adminMensajes">Admin. Mensajes</a></li>
             </ul>
         </nav>
 
@@ -74,19 +75,11 @@
 
                         <label>Edad:</label>
                         <div id="rangoEdad">
-                            <input type="radio" name="edad" id="rango15a34"> <span class="radioLabel">15 a 34 años</span>
-                            <br>
-                            <input type="radio" name="edad" id="rango35a45">  <span class="radioLabel">35 a 45 años</span>
-                            <br>
-                            <input type="radio" name="edad" id="rangoMayor45">  <span class="radioLabel">mayor a 45 años</span>
                         </div>
                         
                         <label for="genero">Genero:</label>
                         <select  name="genero" id="genero" required>
                             <option value="genero">&nbsp;</option>
-                            <option value="hombre">Hombre</option>
-                            <option value="mujer">Mujer</option>
-                            <option value="nodeclara">otro</option>
                         </select>
 
                         <label for="mail">E-Mail:</label>
@@ -131,6 +124,95 @@
 
         </section>
 
+        <section id="adminMensajes" class="contenido">
+            <div>
+                <table>
+                    <caption>
+                        Listado de mensajes
+                    </caption>
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>FECHA ALTA</th>
+                            <th>NOMBRE</th>
+                            <th>APELLIDO</th>
+                            <th >RANGO ETARIO</th>
+                            <th>GENERO</th>
+                            <th>NEWSLETTER</th>
+                            <th>MENSAJE</th>
+                            <th>FECHA RESPUESTA</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>10/10/2024 10:10</td>
+                            <td>Juana</td>
+                            <td>Perez</td>
+                            <td>mas de 45</td>
+                            <td>Mujer</td>
+                            <td>
+                                <img src="img/iconos/close.svg" alt="No">
+                            </td>
+                            <td><a href="#">Mensaje de prueba</a></td>
+                            <td>11/10/2024 11:11</td>
+                            <td>OK</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>10/10/2024 10:10</td>
+                            <td>Luis</td>
+                            <td>Perez</td>
+                            <td>15 a 34 años</td>
+                            <td>Hombre</td>
+                            <td>
+                                <img src="img/iconos/check.svg" alt="Si">
+                            </td>
+                            <td><a href="#">Mensaje de prueba 2</a></td>
+                            <td>11/10/2024 11:11</td>
+                            <td>
+                                <a href="#" title="Respondido">
+                                    <img src="img/iconos/reply.svg" alt="R">
+                                </a>
+                                <a href="#" title="Eliminar">
+                                    <img src="img/iconos/delete.svg" alt="E">
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>10/10/2024 10:10</td>
+                            <td>Jazmin</td>
+                            <td>Perez</td>
+                            <td>35 a 45 años</td>
+                            <td>Otro</td>
+                            <td>
+                                <img src="img/iconos/check.svg" alt="Si">
+                            </td>
+                            <td><a href="#">Mensaje de prueba 3</a></td>
+                            <td>11/10/2024 11:11</td>
+                            <td>
+                                <a href="#" title="Respondido">
+                                    <img src="img/iconos/reply.svg" alt="R">
+                                </a>
+                                <a href="#" title="Eliminar">
+                                    <img src="img/iconos/delete.svg" alt="E">
+                                </a>
+                            </td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="4" style="text-align: right;">&lt; &lt;&lt;</td>
+                            <td colspan="2" style="text-align: center;">Página 1 de 100</td>
+                            <td colspan="4">&gt;&gt; &gt;</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+            
+        </section>
         <section id="sobreMi" class="contenido default">
             <h2>Sobre mi</h2>
 
